@@ -1,14 +1,12 @@
 import React from 'react';
 import type { AppProps } from 'next/app';
-
-import { GlobalStyle } from '../shared/GlobalStyle';
+import { NextUIProvider } from '@nextui-org/react';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <GlobalStyle />
+    <NextUIProvider>
       <Component {...pageProps} />
-    </>
+    </NextUIProvider>
   );
 }
 
