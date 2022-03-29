@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@nextui-org/react": "^1.0.3-beta.5",
+    "@nextui-org/react": "^1.0.4-beta.5",
     "axios": "^0.26.1",
     "emotion-reset": "^3.0.1",
     "next": "12.1.0",

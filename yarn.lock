@@ -256,9 +256,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nextui-org/react@npm:^1.0.3-beta.5":
-  version: 1.0.3-beta.5
-  resolution: "@nextui-org/react@npm:1.0.3-beta.5"
+"@nextui-org/react@npm:^1.0.4-beta.5":
+  version: 1.0.4-beta.5
+  resolution: "@nextui-org/react@npm:1.0.4-beta.5"
   dependencies:
     "@babel/runtime": 7.9.6
     "@react-aria/checkbox": 3.3.0
@@ -266,7 +266,7 @@ __metadata:
     "@react-aria/i18n": 3.3.6
     "@react-aria/interactions": 3.8.0
     "@react-aria/label": 3.2.2
-    "@react-aria/ssr": 3.1.1
+    "@react-aria/ssr": 3.1.2
     "@react-aria/table": 3.2.1
     "@react-aria/utils": 3.11.1
     "@react-aria/visually-hidden": 3.2.4
@@ -279,7 +279,7 @@ __metadata:
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: ac71b4e25429a1f5caf3b4c20247833b9911f6cd77162bfcd440103cac7182ed9dc8475a69f9614b2fe2b481916e8c72bd1e844bd30da1075b52fb7256293473
+  checksum: ec7db7e09a6e18b5c55cd6e7aca30d7b6daa263db35367fb2aa9392957f3a4d5299af1a74169b38b6840c5e79e958eb49f3b12b899fbf63c8fb393a09b700571
   languageName: node
   linkType: hard
 
@@ -501,18 +501,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-aria/ssr@npm:3.1.1":
-  version: 3.1.1
-  resolution: "@react-aria/ssr@npm:3.1.1"
-  dependencies:
-    "@babel/runtime": ^7.6.2
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0-rc.1
-  checksum: f2b6583c465767b018d0e2ba6f59489b3fb2270ee680626af8683fd008ed6fb3eded6d5aa31490cddc4ff59bd3d9713109af8fa22a2dfb9a95a59610af0df939
-  languageName: node
-  linkType: hard
-
-"@react-aria/ssr@npm:^3.1.1, @react-aria/ssr@npm:^3.1.2":
+"@react-aria/ssr@npm:3.1.2, @react-aria/ssr@npm:^3.1.1, @react-aria/ssr@npm:^3.1.2":
   version: 3.1.2
   resolution: "@react-aria/ssr@npm:3.1.2"
   dependencies:
@@ -2392,7 +2381,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "next-template@workspace:."
   dependencies:
-    "@nextui-org/react": ^1.0.3-beta.5
+    "@nextui-org/react": ^1.0.4-beta.5
     "@types/node": 17.0.21
     "@types/react": 17.0.40
     "@typescript-eslint/eslint-plugin": ^5.15.0
