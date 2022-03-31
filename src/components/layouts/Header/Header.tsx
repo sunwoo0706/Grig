@@ -1,4 +1,4 @@
-import { Link, styled } from '@nextui-org/react';
+import { Link, styled, Tooltip, useModal } from '@nextui-org/react';
 import { Switch, Container, Row } from '@nextui-org/react';
 
 import { useScrollPosition } from 'hooks/use-scroll-position';
@@ -6,6 +6,7 @@ import { SunIcon } from 'assets/SunIcon';
 import { MoonIcon } from 'assets/MoonIcon';
 import { NavBar } from 'components/blocks/NavBar';
 import { Logo } from 'assets/Logo';
+import { Modal } from 'components/layouts/Modals';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore: Unreachable code error
@@ -20,6 +21,7 @@ const Header = styled('header', {
 
 export const HeaderComponent: React.FC = () => {
   const scrollPosition = useScrollPosition();
+  const { setVisible, bindings } = useModal();
 
   const blurStyle = {
     backdropFilter: `saturate(180%) blur(10px)`,
@@ -37,17 +39,20 @@ export const HeaderComponent: React.FC = () => {
           </Link>
         </Row>
         <Row justify="center" align="center">
-          <NavBar />
+          <NavBar setVisible={setVisible} />
+          <Modal setVisible={setVisible} bindings={bindings} />
         </Row>
         <Row justify="flex-end" align="center">
-          <Switch
-            checked={true}
-            size="lg"
-            shadow
-            color="warning"
-            iconOn={<SunIcon filled />}
-            iconOff={<MoonIcon filled />}
-          />
+          <Tooltip content="다크 테마는 아직 미완성 ~" placement="bottomEnd">
+            <Switch
+              checked={true}
+              size="lg"
+              shadow
+              color="warning"
+              iconOn={<SunIcon filled />}
+              iconOff={<MoonIcon filled />}
+            />
+          </Tooltip>
         </Row>
       </Container>
     </Header>

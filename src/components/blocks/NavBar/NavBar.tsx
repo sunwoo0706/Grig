@@ -1,11 +1,18 @@
-import { styled } from '@nextui-org/react';
-import { Text } from '@nextui-org/react';
+import { styled, Text } from '@nextui-org/react';
 
 import { SmartLink } from 'components/atoms/SmartLink';
+import { Dispatch, SetStateAction } from 'react';
+
+interface NavBarProps {
+  setVisible: Dispatch<SetStateAction<boolean>>;
+}
 
 const NavMap = [
-  { title: 'Join', href: '/Join' },
-  { title: 'About', href: '/About' },
+  {
+    title: 'Join',
+    href: 'https://github.com/login/oauth/authorize?client_id=685ffb52e4dd768b3f66&redirect_uri=https://d6ui2fy5uj.execute-api.ap-northeast-2.amazonaws.com/api/auth&scope=user:email',
+  },
+  { title: 'About', href: '' },
   { title: 'Open API', href: 'https://github.com/GRI-G/GRIG-API' },
 ];
 
@@ -19,16 +26,27 @@ const Nav = styled('nav', {
   padding: '0 5rem',
 });
 
-export const NavBarComponent: React.FC = () => {
+export const NavBarComponent: React.FC<NavBarProps> = ({ setVisible }) => {
   return (
     <Nav>
-      {NavMap.map(({ title, href }) => (
-        <SmartLink key={title} href={href}>
-          <Text size={18} color="black">
+      {NavMap.map(({ title, href }) =>
+        href === '' ? (
+          <Text
+            size={18}
+            color="black"
+            onClick={() => setVisible(true)}
+            css={{ cursor: 'pointer' }}
+          >
             {title}
           </Text>
-        </SmartLink>
-      ))}
+        ) : (
+          <SmartLink key={title} href={href}>
+            <Text size={18} color="black">
+              {title}
+            </Text>
+          </SmartLink>
+        ),
+      )}
     </Nav>
   );
 };
