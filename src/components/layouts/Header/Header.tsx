@@ -13,6 +13,7 @@ const Header = styled('header', {
   height: '4.75rem',
   display: 'flex',
   alignItems: 'center',
+  zIndex: 1000,
 });
 
 export const HeaderComponent: React.FC = () => {
