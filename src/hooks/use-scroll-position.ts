@@ -12,10 +12,6 @@ export const useScrollPosition = (): number => {
     };
   }, []);
 
-  useEffect(() => {
-    console.log(scrollPosition);
-  }, [scrollPosition]);
-
   const onScroll = () => {
     requestAnimationFrame(() => {
       setScrollPosition(window.pageYOffset);
