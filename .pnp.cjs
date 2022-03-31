@@ -50,7 +50,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.6.0"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:667fc3bc009d94bd89802c17be78c5d8b9aa817ae0618e89437e8ac21704beccd2f6b2bde6f1eaaa148b7090ada91a1366cf44bcdd07d63f6653447b1d2e5af9#npm:17.0.2"],\
-            ["swr", "virtual:667fc3bc009d94bd89802c17be78c5d8b9aa817ae0618e89437e8ac21704beccd2f6b2bde6f1eaaa148b7090ada91a1366cf44bcdd07d63f6653447b1d2e5af9#npm:1.2.2"],\
             ["typescript", "patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=bda367"]\
           ],\
           "linkType": "SOFT"\
@@ -3582,7 +3581,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.6.0"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:667fc3bc009d94bd89802c17be78c5d8b9aa817ae0618e89437e8ac21704beccd2f6b2bde6f1eaaa148b7090ada91a1366cf44bcdd07d63f6653447b1d2e5af9#npm:17.0.2"],\
-            ["swr", "virtual:667fc3bc009d94bd89802c17be78c5d8b9aa817ae0618e89437e8ac21704beccd2f6b2bde6f1eaaa148b7090ada91a1366cf44bcdd07d63f6653447b1d2e5af9#npm:1.2.2"],\
             ["typescript", "patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=bda367"]\
           ],\
           "linkType": "SOFT"\
@@ -4217,28 +4215,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/supports-preserve-symlinks-flag-npm-1.0.0-f17c4d0028-53b1e247e6.zip/node_modules/supports-preserve-symlinks-flag/",\
           "packageDependencies": [\
             ["supports-preserve-symlinks-flag", "npm:1.0.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["swr", [\
-        ["npm:1.2.2", {\
-          "packageLocation": "./.yarn/cache/swr-npm-1.2.2-90e14a1b98-723747c7c2.zip/node_modules/swr/",\
-          "packageDependencies": [\
-            ["swr", "npm:1.2.2"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:667fc3bc009d94bd89802c17be78c5d8b9aa817ae0618e89437e8ac21704beccd2f6b2bde6f1eaaa148b7090ada91a1366cf44bcdd07d63f6653447b1d2e5af9#npm:1.2.2", {\
-          "packageLocation": "./.yarn/__virtual__/swr-virtual-c04e47d691/0/cache/swr-npm-1.2.2-90e14a1b98-723747c7c2.zip/node_modules/swr/",\
-          "packageDependencies": [\
-            ["swr", "virtual:667fc3bc009d94bd89802c17be78c5d8b9aa817ae0618e89437e8ac21704beccd2f6b2bde6f1eaaa148b7090ada91a1366cf44bcdd07d63f6653447b1d2e5af9#npm:1.2.2"],\
-            ["@types/react", "npm:17.0.40"],\
-            ["react", "npm:17.0.2"]\
-          ],\
-          "packagePeers": [\
-            "@types/react",\
-            "react"\
           ],\
           "linkType": "HARD"\
         }]\

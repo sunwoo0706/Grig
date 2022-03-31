@@ -2465,7 +2465,6 @@ __metadata:
     prettier: ^2.6.0
     react: 17.0.2
     react-dom: 17.0.2
-    swr: ^1.2.2
     typescript: 4.6.2
   languageName: unknown
   linkType: soft
@@ -3080,15 +3079,6 @@ __metadata:
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
   checksum: 53b1e247e68e05db7b3808b99b892bd36fb096e6fba213a06da7fab22045e97597db425c724f2bbd6c99a3c295e1e73f3e4de78592289f38431049e1277ca0ae
-  languageName: node
-  linkType: hard
-
-"swr@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "swr@npm:1.2.2"
-  peerDependencies:
-    react: ^16.11.0 || ^17.0.0 || ^18.0.0
-  checksum: 723747c7c263536d8c9ee8b38039462395ba09a7925508f22c8fc940a1ae72e1f05ef678767b2197ce337e170f4812563281bc4b5f9ad7e4eec895cd7139fb8e
   languageName: node
   linkType: hard
 
