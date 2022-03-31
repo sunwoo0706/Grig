@@ -1,4 +1,4 @@
-import { Link, Text } from '@nextui-org/react';
+import { Link } from '@nextui-org/react';
 
 interface SmartLinkProps {
   href: string;
@@ -11,11 +11,9 @@ export const SmartLink: React.FC<SmartLinkProps> = ({ href, children }) => {
 
   return regEx.test(href) ? (
     <Link href={href} target="_blank" rel="noreferrer">
-      <Text>{children}</Text>
+      {children}
     </Link>
   ) : (
-    <Link href={href}>
-      <Text>{children}</Text>
-    </Link>
+    <Link href={href}>{children}</Link>
   );
 };

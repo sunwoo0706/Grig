@@ -9,6 +9,7 @@ const Home: NextPage = () => {
     <>
       <Spacer y={2} />
       <Table />
+      <Spacer y={2} />
     </>
   );
 };
