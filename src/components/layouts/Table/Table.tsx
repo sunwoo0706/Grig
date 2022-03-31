@@ -26,7 +26,7 @@ export const TableComponent: React.FC<TableComponentProps> = ({
         }}
       >
         <Table.Header>
-          <Table.Column></Table.Column>
+          <Table.Column>&nbsp;</Table.Column>
           <Table.Column width="25%">PROFILE</Table.Column>
           <Table.Column width="15%">CONTRIBUTION</Table.Column>
           <Table.Column>BIO</Table.Column>

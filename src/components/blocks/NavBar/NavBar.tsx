@@ -9,6 +9,8 @@ const NavMap = [
   { title: 'Open API', href: 'https://github.com/GRI-G/GRIG-API' },
 ];
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore: Unreachable code error
 const Nav = styled('nav', {
   width: '100%',
   display: 'flex',

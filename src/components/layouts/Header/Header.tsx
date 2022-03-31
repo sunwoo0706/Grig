@@ -7,6 +7,8 @@ import { MoonIcon } from 'assets/MoonIcon';
 import { NavBar } from 'components/blocks/NavBar';
 import { Logo } from 'assets/Logo';
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore: Unreachable code error
 const Header = styled('header', {
   position: 'sticky',
   top: 0,
@@ -25,6 +27,8 @@ export const HeaderComponent: React.FC = () => {
   };
 
   return (
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore: Unreachable code error
     <Header css={scrollPosition > 30 && blurStyle}>
       <Container md display="flex" alignItems="center" wrap="nowrap">
         <Row justify="flex-start" align="center">
