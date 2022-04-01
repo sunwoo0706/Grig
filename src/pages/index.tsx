@@ -5,6 +5,7 @@ import request from 'graphql-request';
 
 import { Table } from 'components/layouts/Table';
 import { User } from 'shared/Type';
+import Head from 'next/head';
 
 interface RankingData {
   ranking: User[];
@@ -36,6 +37,13 @@ export async function getStaticProps() {
 const Home: NextPage<StaticProps> = ({ rankingData }) => {
   return (
     <>
+      <Head>
+        <title>GRIG</title>
+        <meta
+          name="description"
+          content="광주소프트웨어마이스터고등학교 Github 순위 페이지"
+        />
+      </Head>
       <Spacer y={2} />
       <Table rankingData={rankingData} />
       <Spacer y={2} />

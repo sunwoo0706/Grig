@@ -19,7 +19,7 @@ export const TableComponent: React.FC<TableComponentProps> = ({
   return (
     <Container md>
       <Table
-        aria-label="Example static collection table"
+        aria-label="광주소프트웨어마이스터고등학교 Github 랭킹 리스트"
         css={{
           height: 'auto',
           minWidth: '100%',
@@ -33,7 +33,7 @@ export const TableComponent: React.FC<TableComponentProps> = ({
         </Table.Header>
         <Table.Body>
           {data.ranking.map((user: UserType, i) => (
-            <Table.Row key="1">
+            <Table.Row key={i}>
               <Table.Cell
                 css={{ fontWeight: 600, textAlign: 'center', px: '1.4rem' }}
               >

@@ -38,9 +38,8 @@ export const ModalComponent: React.FC<ModalProps> = ({
           GRIG 는 NextJS 의 <code>getStaticProps</code> 를 이용하여
           서버사이드에서 GraphQL API 를 처리합니다.
           <br />
-          <code>revalidate</code> 주기는 12시간입니다. 약 오전, 오후 4시에
-          데이터가 새로 고쳐지기 때문에 데이터가 바로 반영되지 않아도
-          기다려주시기 바랍니다.
+          <code>revalidate</code> 주기는 12시간입니다. 데이터가 바로 반영되지
+          않아도 기다려주시기 바랍니다.
           <br />
           유저 리스트는 Contributions 를 기준으로 내림차순 정렬되어 있습니다.
           <br />

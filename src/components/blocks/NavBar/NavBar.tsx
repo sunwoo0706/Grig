@@ -29,9 +29,10 @@ const Nav = styled('nav', {
 export const NavBarComponent: React.FC<NavBarProps> = ({ setVisible }) => {
   return (
     <Nav>
-      {NavMap.map(({ title, href }) =>
+      {NavMap.map(({ title, href }, i) =>
         href === '' ? (
           <Text
+            key={i}
             size={18}
             color="black"
             onClick={() => setVisible(true)}
@@ -40,7 +41,7 @@ export const NavBarComponent: React.FC<NavBarProps> = ({ setVisible }) => {
             {title}
           </Text>
         ) : (
-          <SmartLink key={title} href={href}>
+          <SmartLink key={i} href={href}>
             <Text size={18} color="black">
               {title}
             </Text>
