@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import type { NextPage } from 'next';
 import { Spacer } from '@nextui-org/react';
 import request from 'graphql-request';
@@ -35,6 +35,22 @@ export async function getStaticProps() {
 }
 
 const Home: NextPage<StaticProps> = ({ rankingData }) => {
+  useEffect(() => {
+    console.log(
+      `%c
+        ___       ___       ___       ___   
+       /\\  \\     /\\  \\     /\\  \\     /\\  \\  
+      /::\\  \\   /::\\  \\   _\\:\\  \\   /::\\  \\ 
+     /:/\\:\\__\\ /::\\:\\__\\ /\\/::\\__\\ /:/\\:\\__\\
+     \\:\\:\\/__/ \\;:::/  / \\::/\\/__/ \\:\\:\\/__/
+      \\::/  /   |:\\/__/   \\:\\__\\    \\::/  / 
+       \\/__/     \\|__|     \\/__/     \\/__/  
+
+  `,
+      'color: #0070F3;',
+    );
+  });
+
   return (
     <>
       <Head>
