@@ -1,5 +1,14 @@
-import { Link, styled, Tooltip, useModal } from '@nextui-org/react';
-import { Switch, Container, Row } from '@nextui-org/react';
+import {
+  Link,
+  styled,
+  Tooltip,
+  useModal,
+  Switch,
+  Container,
+  Row,
+  useTheme,
+} from '@nextui-org/react';
+import { useTheme as useNextTheme } from 'next-themes';
 
 import { useScrollPosition } from 'hooks/use-scroll-position';
 import { SunIcon } from 'assets/SunIcon';
@@ -23,6 +32,9 @@ export const HeaderComponent: React.FC = () => {
   const scrollPosition = useScrollPosition();
   const { setVisible, bindings } = useModal();
 
+  const { setTheme } = useNextTheme();
+  const { isDark } = useTheme();
+
   const blurStyle = {
     backdropFilter: `saturate(180%) blur(10px)`,
     boxShadow: `rgb(2 1 1 / 10%) 0px 5px 20px -5px`,
@@ -35,7 +47,7 @@ export const HeaderComponent: React.FC = () => {
       <Container md display="flex" alignItems="center" wrap="nowrap">
         <Row justify="flex-start" align="center">
           <Link href="/">
-            <Logo />
+            <Logo fill={isDark ? '#fff' : '#000'} />
           </Link>
         </Row>
         <Row justify="center" align="center">
@@ -43,16 +55,14 @@ export const HeaderComponent: React.FC = () => {
           <Modal setVisible={setVisible} bindings={bindings} />
         </Row>
         <Row justify="flex-end" align="center">
-          <Tooltip content="다크 테마는 아직 미완성 ~" placement="bottomEnd">
-            <Switch
-              checked={true}
-              size="lg"
-              shadow
-              color="warning"
-              iconOn={<SunIcon filled />}
-              iconOff={<MoonIcon filled />}
-            />
-          </Tooltip>
+          <Switch
+            checked={isDark}
+            size="lg"
+            color="success"
+            iconOn={<SunIcon filled />}
+            iconOff={<MoonIcon filled />}
+            onChange={e => setTheme(e.target.checked ? 'dark' : 'light')}
+          />
         </Row>
       </Container>
     </Header>
