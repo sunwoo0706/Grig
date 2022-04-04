@@ -38,17 +38,37 @@ export const ModalComponent: React.FC<ModalProps> = ({
           GRIG 는 NextJS 의 <code>getStaticProps</code> 를 이용하여
           서버사이드에서 GraphQL API 를 처리합니다.
           <br />
+          서버의 데이터 <code>revalidate</code> 주기는 24시간이며, 클라이언트의{' '}
           <code>revalidate</code> 주기는 12시간입니다. 데이터가 바로 반영되지
           않아도 기다려주시기 바랍니다.
           <br />
           유저 리스트는 Contributions 를 기준으로 내림차순 정렬되어 있습니다.
-          <br />
           유저 프로필을 클릭하면 해당 유저의 Github 프로필을 볼 수 있습니다.
+          <br />
+          화면 우측 상단에 있는 토글 스위치를 활성화시켜 테마를 변경할 수
+          있습니다. 기본테마는 사용자 시스템의 테마에 맞춰서 자동으로
+          맞춰집니다.
           <br />
           <br />
           <Text h5>이슈 제보</Text>
           UI 나 UX 문제 또는 클라이언트 기능 작동 오류가 발생한 경우에는{' '}
-          <Link href="https://github.com/sunwoo0706/Grig/issues" icon>
+          <Link
+            href="https://github.com/sunwoo0706/Grig/issues"
+            icon
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github Issues
+          </Link>{' '}
+          에 이슈를 제보해주시면 감사드리겠습니다.
+          <br />
+          서버 이슈라고 생각하신다면{' '}
+          <Link
+            href="https://github.com/GRI-G/GRIG-API/issues"
+            icon
+            target="_blank"
+            rel="noreferrer"
+          >
             Github Issues
           </Link>{' '}
           에 이슈를 제보해주시면 감사드리겠습니다.
@@ -56,7 +76,12 @@ export const ModalComponent: React.FC<ModalProps> = ({
           <br />
           <Text h5>라이센스</Text>
           GRIG는{' '}
-          <Link icon href="https://github.com/GRI-G/GRIG-API">
+          <Link
+            icon
+            href="https://github.com/GRI-G/GRIG-API"
+            target="_blank"
+            rel="noreferrer"
+          >
             GRIG OpenAPI
           </Link>{' '}
           를 사용하였습니다. GRIG OpenAPI 는 MIT License 를 가지고 있습니다.
@@ -64,16 +89,23 @@ export const ModalComponent: React.FC<ModalProps> = ({
           자체를 베껴 사용하지 말아주시기 바랍니다.
           <br />
           게시물 플랫폼에 본 프로젝트 URL 삽입을 원할 경우, 본 프로젝트의{' '}
-          <Link href="https://github.com/sunwoo0706/Grig" icon>
+          <Link
+            href="https://github.com/sunwoo0706/Grig"
+            icon
+            target="_blank"
+            rel="noreferrer"
+          >
             Github URL
           </Link>{' '}
-          도 같이 삽입하여주시기 바랍니다.
+          을 같이 삽입하여주시기 바랍니다.
           <br />
           <br />
           <Text h5>개인 정보</Text>
           <Link
             icon
             href="https://github.com/login/oauth/authorize?client_id=685ffb52e4dd768b3f66&redirect_uri=https://d6ui2fy5uj.execute-api.ap-northeast-2.amazonaws.com/api/auth&scope=user:email"
+            target="_blank"
+            rel="noreferrer"
           >
             GRIG OpenAPI
           </Link>{' '}

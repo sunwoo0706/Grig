@@ -1,7 +1,3 @@
-## Nextjs Template
+## GRIG
 
-- typescript
-- eslint, prettier
-- yarnberry
-- emotionJs
-- cssReset
+> GRIG는 광주소프트웨어마이스터고등학교 학생들의 Github 활동을 활성화시키기 위해서 만들어졌습니다.
