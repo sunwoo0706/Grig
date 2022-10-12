@@ -22,6 +22,8 @@ class MyDocument extends Document {
         <Head>
           {CssBaseline.flush()}
           <link rel="icon" href="/static/icon.png" />
+          {/* manifest.json */}
+          <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content="#0070F3" />
           {/* Twitter Card */}
           <meta property="twitter:site" content="GRIG" />
