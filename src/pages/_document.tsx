@@ -24,7 +24,7 @@ class MyDocument extends Document {
           <link rel="icon" href="/static/icon.png" />
           {/* manifest.json */}
           <link rel="manifest" href="/manifest.json" />
-          <meta name="theme-color" content="#0070F3" />
+          <meta name="theme-color" content="#000000" />
           {/* Twitter Card */}
           <meta property="twitter:site" content="GRIG" />
           <meta name="twitter:card" content="summary_large_image" />
