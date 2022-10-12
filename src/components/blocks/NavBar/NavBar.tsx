@@ -14,6 +14,9 @@ const Nav = styled('nav', {
   display: 'flex',
   justifyContent: 'space-around',
   alignItems: 'center',
+  '@xsMax': {
+    display: 'none',
+  },
 });
 
 export const NavBarComponent: React.FC<NavBarProps> = ({ setVisible }) => {
